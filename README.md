@@ -48,6 +48,7 @@ For verification `molecule/resources/verify.yml` run after the role has been app
         - name: requested job by the minute
           minute: "23"
           job: "ls -alh > /dev/null"
+          user: "user"
         - name: requested job by the hour
           hour: "23"
           job: "ls -alh > /dev/null"

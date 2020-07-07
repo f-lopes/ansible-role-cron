@@ -9,6 +9,7 @@
       cron_jobs:
         - name: requested job
           job: "ls -alh > /dev/null"
+          user: "cron"
         - name: requested job by the minute
           minute: "23"
           job: "ls -alh > /dev/null"

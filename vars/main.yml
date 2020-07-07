@@ -17,3 +17,5 @@ _cron_service:
   Suse: cron
 
 cron_service: "{{ _cron_service[ansible_os_family] | default(_cron_service['default']) }}"
+
+cron_user: "root"
